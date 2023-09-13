@@ -1,10 +1,13 @@
 import './App.css';
+import {Route, Routes} from "react-router-dom";
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
     <div >
-      <h1>hello world</h1>
-      
+      <Routes>
+        <Route exact path="/" element={(<MainPage />)} />
+      </Routes>
     </div>
   );
 }
