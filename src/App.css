@@ -59,17 +59,22 @@
 .section-container-mainpage {
   display: flex;
   margin: 15px 0;
+  max-height: calc(100vh - 200px);
 }
 
 .horizontal-sections {
   width: 67%;
   border-right: 1px solid #afafaf;
+  max-height: 100%;
+  overflow-y: scroll;
 }
 
 .vertical-section {
   width: 33%;
   display: flex;
   justify-content: center;
+  max-height: 100%;
+  overflow-y: scroll;
 }
 
 .arts-outer-container {

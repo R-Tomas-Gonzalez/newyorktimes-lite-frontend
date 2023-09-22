@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image, Stack, CardBody, Heading, Text, CardFooter, Button, Divider, ButtonGroup } from '@chakra-ui/react';
+import { Card, Image, Stack, CardBody, Heading, Text, CardFooter, Button, Divider } from '@chakra-ui/react';
 import {v4 as uuidv4} from 'uuid';
 
 function TechContainer(props) {

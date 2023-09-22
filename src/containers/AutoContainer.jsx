@@ -1,15 +1,15 @@
 import React from 'react';
-import { Card, Image, Stack, CardBody, Heading, Text, CardFooter, Button, Divider, ButtonGroup } from '@chakra-ui/react';
+import { Card, Image, Stack, CardBody, Heading, Text, CardFooter, Button, Divider } from '@chakra-ui/react';
 import {v4 as uuidv4} from 'uuid';
 
-function SportsContainer(props) {
+function AutoContainer(props) {
+
     return (
         <div className='arts-outer-container'>
-            <h1>Sports</h1>
+            <h1>Auto</h1>
             <div className="arts-card-container">
                 <Stack spacing='4' direction='row'>
-                {props.articles.length ? props.articles.map((article) => (
-                    console.log(article),
+                    {props.articles.map((article) => (
                         <Card key={uuidv4()} maxW='sm' minW='sm'>
                             <CardBody>
                                 <Image
@@ -17,27 +17,27 @@ function SportsContainer(props) {
                                     alt={article.title}
                                     borderRadius='lg'
                                 />
-                                {/* <Stack mt='6' spacing='3'>
+                                <Stack mt='6' spacing='3'>
                                     <Heading size='md'>{article.title}</Heading>
                                     <Text>
                                         {article.abstract}
                                     </Text>
-                                </Stack> */}
+                                </Stack>
                             </CardBody>
                             <Divider />
                             <CardFooter>
-                                    {/* <a href={article.url} target='_blank' rel="noreferrer">
+                                    <a href={article.url} target='_blank' rel="noreferrer">
                                         <Button variant='outline' colorScheme='blue'>
                                             Read More...
                                         </Button>
-                                    </a> */}
+                                    </a>
                             </CardFooter>
                         </Card>
-                    )) : null}
+                    ))}
                 </Stack>
             </div>
         </div>
     )
 }
 
-export default SportsContainer
+export default AutoContainer
